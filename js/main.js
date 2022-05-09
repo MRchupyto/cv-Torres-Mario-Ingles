@@ -1,0 +1,1 @@
+window.alert("Welcome to the web resume of Mario Torres");

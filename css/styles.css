@@ -1,0 +1,227 @@
+/* Import Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+html{
+    font-size: 16px;
+}
+
+/* Redimensión de fuente utilizando rem */
+p{
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+h5{
+    font-size: 1.15rem;
+}
+
+h6{
+    font-size: 1.05rem;
+}
+/**************************/
+
+/* clases predefinidas */
+* {
+    box-sizing: border-box;
+}
+
+body{
+        margin: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        padding-top: 2%;
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(194, 194, 194), rgb(255, 255, 255));
+    }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Diseño de columnas */
+.column-1{
+    width: 100%;
+    float: left;
+}
+
+.column-2{
+    width: 50%;
+    float: left;
+}
+
+.column-3{
+    width: 33.33%;
+    float: left;
+}
+
+.column-4{
+    width: 25%;
+    float: left;
+}
+
+.column-5{
+    width: 20%;
+    float: left;
+}
+
+.column-6{
+    width: 16.66%;
+    float: left;
+}
+
+.column-75{
+    width: 75%;
+    float: left;
+}
+
+/* Otras clases */
+#header {
+    height: 50vh;
+    background-image: url("../img/inicio2.jpg");
+    background-position-x: center;
+    background-size: cover;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    border-radius: 10px;
+}
+
+#titulaso {
+    background-color: rgba(214, 187, 68, 0.555);
+    border-radius: 10px;
+}
+
+.padding-m {
+    padding: 2.5%;
+}
+
+.center {
+
+    text-align: center;
+}
+ 
+.raya{
+    background-color: rgba(119, 118, 118, 0.527);
+    border-radius: 10px;
+}
+.card{
+    width: 100%;
+    height: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 30% 20%;
+}
+
+.fuente1{
+    font-family: 'Noto Serif', serif;
+}
+
+.fuente2{
+    font-family: 'Koulen', cursive;
+}
+
+.mapas{
+    height: 50%;
+    border-radius: 20px;
+}
+
+.barriga {
+    background-color:rgba(182, 180, 180, 0.459) ;
+    border-radius: 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  a{
+      text-decoration: none;
+      color: black;
+  }
+
+  progress {
+    border: none;
+    width: 200px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    
+  }
+  
+  progress {
+    color: rgba(154, 154, 154, 0.875);
+
+  }
+  
+  progress::-webkit-progress-value {
+    background: rgba(227, 181, 30, 0.845);
+
+  }
+  
+  progress::-moz-progress-bar {
+    background: lightcolor;
+
+    color: rgba(182, 180, 180, 0.459) ;;
+  }
+
+  .footer{
+      background-color: black;
+      font-family: 'Noto Serif', serif;
+      text-align: center;
+      color: white;
+      padding-top:2%;
+      padding-bottom: 2%;
+  }
+
+
+
+/* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* column-2 pasará de tener 50% a 100% */
+    .column-2{
+        width: 100%;
+    }
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3{
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4{
+        width: 100%;
+    }
+}
