@@ -202,7 +202,10 @@ table {
       padding-bottom: 2%;
   }
 
-
+  button{
+    text-align: center;
+    
+}
 
 /* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
 .flex{
